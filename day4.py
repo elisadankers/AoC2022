@@ -13,10 +13,7 @@ for line in data:
         part1 += 1        
     
     #part 2
-    if (int(elf1_start) <= int(elf2_start) <= int(elf1_end)) \
-    or (int(elf1_start) <= int(elf2_end) <= int(elf1_end)) \
-    or (int(elf2_start) <= int(elf1_start) <= int(elf2_end)) \
-    or (int(elf2_start) <= int(elf1_end) <= int(elf2_end)):
+    if (int(elf2_start) <= int(elf1_end))and (int(elf2_end) >= int(elf1_start)):
         part2 += 1
 
 print(part1)
